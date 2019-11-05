@@ -6,7 +6,9 @@ import { BookListComponent } from './book-list/book-list.component';
 import { BookCreateComponent } from './book-create/book-create.component';
 import { BookUpdateComponent } from './book-update/book-update.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
-import {RouterModule} from '@angular/router';
+import {AppRoutingModule} from './app-routing.module';
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {RouterModule} from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    RouterModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
