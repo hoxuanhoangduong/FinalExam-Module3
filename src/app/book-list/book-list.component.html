@@ -1,0 +1,17 @@
+<div class="title">
+  <h1> Result </h1>
+</div>
+<div *ngFor="let item of output; index as i">
+  <a [routerLink]="['/home',item.id]"><h3>{{item.title}}</h3></a>
+  <div class="item">
+    <div class="content">
+      <ol>
+        <li>Author: {{item.author}}</li>
+        <li>Description: {{item.description}}</li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div>
+  <button [routerLink]="['/create']">Create new book</button>
+</div>
