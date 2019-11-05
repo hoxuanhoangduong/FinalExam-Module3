@@ -8,6 +8,10 @@
   margin-top: 30px;
 }
 
+h1 {
+  color: aliceblue;
+}
+
 .description {
   margin: 20px 20px 30px 20px;
   height: 500px;
